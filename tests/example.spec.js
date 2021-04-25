@@ -10,6 +10,5 @@ test("examples of some things", async () => {
   document.body.appendChild(container);
 
   const user = getByText(container, "Current users");
-
   expect(user).toBeInTheDocument();
 });

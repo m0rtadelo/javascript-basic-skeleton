@@ -1,8 +1,8 @@
-import "./assets/css/normalize.css";
+//import "./assets/css/normalize.css";
 
 import { getUsers } from "./users";
 
-export async function printUsers() {
+export async function printUsers(): Promise<any> {
   const users = await getUsers();
   const element = document.createElement("div");
   element.innerHTML = `<h2>Current users</h2>
